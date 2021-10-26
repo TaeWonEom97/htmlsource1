@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(9, 100, 160);
+}
+
+/* 1720px 이상이면 카드를 한줄에 보이기 */
+@media screen and (min-width: 1720px) {
+  #container {
+    width: 1710px;
+    margin: 50px auto;
+  }
+  .card {
+    position: relative;
+    float: left;
+    width: 550px;
+    height: 250px;
+    border: 1px solid #0f0f0f33;
+    background-color: #fff;
+    margin: 20px 10px;
+  }
+  .words {
+    position: absolute;
+    left: 300px;
+    top: 50px;
+    width: 200px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1719) {
+  #container {
+    width: 570px;
+    margin: 50px auto;
+  }
+  .card {
+    position: relative;
+    width: 550px;
+    height: 250px;
+    border: 1px solid #0f0f0f33;
+    background-color: #fff;
+    margin: 20px 10px;
+  }
+  .words {
+    position: absolute;
+    left: 310px;
+    top: 50px;
+    width: 200px;
+  }
+}
